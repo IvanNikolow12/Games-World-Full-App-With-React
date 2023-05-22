@@ -27,14 +27,14 @@ export async function action({request, params}) {
             email: data.get('email'),
             password: data.get('password')
         }
-        url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDw4xWbC11MjR8DNzV5RUi8lnBexxQ9_4k`
+        url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={ApiKey}`
     } else {
         authData = {
             email: data.get('email'),
             password: data.get('password'),
             repeatPassword: data.get('repeat-password')
         }
-        url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDw4xWbC11MjR8DNzV5RUi8lnBexxQ9_4k`
+        url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={ApiKey}`
     }
     const response = await fetch(url, {
         method: 'POST',
