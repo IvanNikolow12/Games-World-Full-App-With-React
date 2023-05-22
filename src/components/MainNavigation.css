@@ -1,0 +1,103 @@
+.cyber-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 0 20px;
+  border-bottom: 2px solid #00ffff;
+}
+
+.cyber-nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.cyber-nav-left img {
+  width: 90px;
+  height: 80px;
+  /* height: auto; */
+}
+
+.cyber-nav-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cyber-nav-right li {
+  margin-left: 20px;
+}
+
+.cyber-nav-right a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.cyber-nav-right button {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  border: none;
+  background-color: #000000;
+  padding: 0;
+}
+.cyber-nav-right a:hover,
+.cyber-nav-right button:hover {
+  color: #00ffff;
+  cursor: pointer;
+}
+
+@keyframes glitch {
+  0% {
+    clip: rect(28px, 9999px, 18px, 0);
+    transform: skew(0.9deg);
+  }
+
+  5% {
+    clip: rect(39px, 9999px, 14px, 0);
+    transform: skew(-0.4deg);
+  }
+
+  10% {
+    clip: rect(35px, 9999px, 38px, 0);
+    transform: skew(0.6deg);
+  }
+
+  15% {
+    clip: rect(21px, 9999px, 3px, 0);
+    transform: skew(-0.4deg);
+  }
+
+  20% {
+    clip: rect(19px, 9999px, 26px, 0);
+    transform: skew(-0.6deg);
+  }
+
+  25% {
+    clip: rect(37px, 9999px, 33px, 0);
+    transform: skew(0.8deg);
+  }
+
+  30% {
+    clip: rect(1px, 9999px, 47px, 0);
+    transform: skew(-1.1deg);
+  }
+
+  35% {
+    clip: rect(30px, 9999px, 32px, 0);
+    transform: skew(0.7deg);
+  }
+
+  40% {
+    clip: rect(17px, 9999px, 27);
+  }
+}

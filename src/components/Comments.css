@@ -1,0 +1,49 @@
+.card-comments {
+  display: flex;
+  position: absolute;
+  top: 270px;
+  left: 480px;
+}
+
+.big-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0 0 50px;
+  width: 420px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+  transition: 0.2s ease-in-out;
+}
+
+.big-card:hover {
+  transform: scale(1.02);
+}
+
+.big-card h1 {
+  color: aliceblue;
+  margin: 5px 0 5px 5px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  background-color: rgba(243, 243, 243, 0.4);
+  border-radius: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0 0 5px 5px;
+}
+
+.date {
+  font-style: italic;
+  font-size: 12px;
+  margin: 0 0 3px 5px;
+}
+
+.content {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 0 5px 5px;
+}

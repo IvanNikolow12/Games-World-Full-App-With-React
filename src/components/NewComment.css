@@ -1,0 +1,80 @@
+#comment-form {
+    background-color: rgba(0 , 0, 0, .5);
+  /* display: flex;
+    position: absolute;
+    left: 35%;
+    top: 25%; */
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    /* display: block; */
+    /* z-index: 1000; */
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  #comment-form.show {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .comment-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .comment-input,
+  .comment-text-area {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+  }
+  
+  .comment-text-area {
+    resize: vertical;
+    min-height: 60px;
+    /* margin: 0 auto; */
+  }
+  
+  .new-comment-button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 35%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .submit-button {
+    background-color: #30a436;
+  }
+  .submit-button:hover {
+    background-color: #167f1b;
+  }
+
+  .cancel-button {
+    background-color: #9e2828;
+  }
+  .cancel-button:hover {
+    background-color: #851717;
+  }

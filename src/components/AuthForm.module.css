@@ -1,0 +1,54 @@
+body {
+  background-color: #162f3c;
+}
+
+.form {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.form label {
+  display: block;
+  width: 100%;
+  color: antiquewhite;
+}
+.form input {
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background-color: #a1becc;
+  border: #162f3c;
+}
+
+.actions a {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.actions button:hover {
+  background-color: aquamarine;
+}
+
+.actions a:hover {
+  background-color: rgb(10, 25, 20);
+
+}
